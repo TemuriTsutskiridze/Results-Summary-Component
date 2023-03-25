@@ -1,0 +1,20 @@
+{
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 600,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Shades of Purple",
+    "window.zoomLevel": 1,
+    "easycode.userEmail": "temurtsutskiridze04@gmail.com",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/styles/css",
+            "savePathReplacementPairs": null
+        }
+    ]
+}
