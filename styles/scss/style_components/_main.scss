@@ -1,4 +1,121 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4em;
+    width: 100%;
+
+    .your-result {
+        width: 100%;
+        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+        box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+        border-radius: 0px 0px 32px 32px;
+        padding: 2.4em 0 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .result {
+            font-size: 1.8em;
+            line-height: 1.3em;
+            font-weight: 700;
+            color: #CAC9FF;
+        }
+
+        .score-circle {
+            width: 14rem;
+            height: 14rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+            border-radius: 100%;
+            margin-top: 2.4em;
+
+            .main-score {
+                font-size: 5.6em;
+                line-height: 1.3em;
+                font-weight: 800;
+                color: #FFFFFF;
+            }
+
+            .main-out-of {
+                font-size: 1.6em;
+                line-height: 1.3em;
+                font-weight: 700;
+                color: #CAC9FF;
+                opacity: 0.52;
+            }
+        }
+
+        .rate {
+            font-size: 2.4em;
+            line-height: 1.3em;
+            font-weight: 700;
+            margin-top: 1em;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .main-feedback {
+            font-size: 1.6em;
+            line-height: 1.3125em;
+            font-weight: 700;
+            margin-top: 0.5em;
+            color: #CAC9FF;
+            text-align: center;
+            max-width: 30ch;
+        }
+    }
+
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6em;
+        align-items: center;
+
+        .summary-box {
+            width: 31.5rem;
+            font-size: 1.6em;
+            padding: 1.2em 1em;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+
+            .left-container {
+                display: flex;
+                align-items: center;
+                gap: 1.6em;
+
+                .category {
+                    font-size: 1em;
+                    line-height: 1.3125em;
+                    font-weight: 500;
+                }
+            }
+
+            .score_paragraph {
+                color: #303B59;
+                opacity: 0.5;
+
+                .score{
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
