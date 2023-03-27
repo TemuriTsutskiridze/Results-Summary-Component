@@ -55,18 +55,34 @@ html {
 
 body {
   min-height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   font-family: "Hanken Grotesk", sans-serif;
 }
+@media (min-width: 90em) {
+  body {
+    align-items: center;
+  }
+}
 
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2.4em;
   width: 100%;
+}
+@media (min-width: 90em) {
+  main {
+    flex-direction: row;
+    width: 73.6rem;
+    height: 51.2em;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    border-radius: 32px;
+    gap: 4rem;
+  }
 }
 main .your-result {
   width: 100%;
@@ -78,11 +94,24 @@ main .your-result {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 90em) {
+  main .your-result {
+    width: 36.8rem;
+    border-radius: 32px;
+    height: 100%;
+    padding: 3.8em 5.4em 5.5em;
+  }
+}
 main .your-result .result {
   font-size: 1.8em;
   line-height: 1.3em;
   font-weight: 700;
   color: #CAC9FF;
+}
+@media (min-width: 90em) {
+  main .your-result .result {
+    font-size: 2.4em;
+  }
 }
 main .your-result .score-circle {
   width: 14rem;
@@ -95,11 +124,25 @@ main .your-result .score-circle {
   border-radius: 100%;
   margin-top: 2.4em;
 }
+@media (min-width: 90em) {
+  main .your-result .score-circle {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 3.5em;
+    gap: 0.4em;
+  }
+}
 main .your-result .score-circle .main-score {
   font-size: 5.6em;
   line-height: 1.3em;
   font-weight: 800;
   color: #FFFFFF;
+}
+@media (min-width: 90em) {
+  main .your-result .score-circle .main-score {
+    font-size: 7.2em;
+    line-height: 1em;
+  }
 }
 main .your-result .score-circle .main-out-of {
   font-size: 1.6em;
@@ -107,6 +150,12 @@ main .your-result .score-circle .main-out-of {
   font-weight: 700;
   color: #CAC9FF;
   opacity: 0.52;
+}
+@media (min-width: 90em) {
+  main .your-result .score-circle .main-out-of {
+    font-size: 1.8em;
+    line-height: 1.3em;
+  }
 }
 main .your-result .rate {
   font-size: 2.4em;
@@ -116,22 +165,45 @@ main .your-result .rate {
   color: #FFFFFF;
   text-align: center;
 }
+@media (min-width: 90em) {
+  main .your-result .rate {
+    font-size: 3.2em;
+    line-height: 1.3125em;
+    margin-top: 0.875em;
+  }
+}
 main .your-result .main-feedback {
   font-size: 1.6em;
   line-height: 1.3125em;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 0.5em;
   color: #CAC9FF;
   text-align: center;
   max-width: 30ch;
 }
-main .summary {
+@media (min-width: 90em) {
+  main .your-result .main-feedback {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    margin-top: 0.8em;
+  }
+}
+main .info {
+  margin-top: 2.4em;
+}
+main .info .info_title {
+  font-size: 1.8em;
+  line-height: 1.3em;
+  font-weight: 700;
+}
+main .info .summary {
   display: flex;
   flex-direction: column;
   gap: 1.6em;
   align-items: center;
+  margin-top: 2.4em;
 }
-main .summary .summary-box {
+main .info .summary .summary-box {
   width: 31.5rem;
   font-size: 1.6em;
   padding: 1.2em 1em;
@@ -139,20 +211,52 @@ main .summary .summary-box {
   display: flex;
   justify-content: space-between;
 }
-main .summary .summary-box .left-container {
+@media (min-width: 90em) {
+  main .info .summary .summary-box {
+    width: 28.8rem;
+    font-size: 1.8em;
+    line-height: 1.3em;
+  }
+}
+main .info .summary .summary-box .left-container {
   display: flex;
   align-items: center;
-  gap: 1.6em;
+  gap: 1em;
 }
-main .summary .summary-box .left-container .category {
+main .info .summary .summary-box .left-container .category {
   font-size: 1em;
   line-height: 1.3125em;
   font-weight: 500;
 }
-main .summary .summary-box .score_paragraph {
+main .info .summary .summary-box .score_paragraph {
   color: #303B59;
   opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
 }
-main .summary .summary-box .score_paragraph .out_of_score {
+main .info .summary .summary-box .score_paragraph .out_of_score {
   opacity: 0.5;
+}
+main .continue {
+  font-size: 1.8em;
+  line-height: 1.3em;
+  font-weight: 700;
+  padding: 0.95em 6.7em;
+  color: #FFFFFF;
+  border: none;
+  background: #303B59;
+  border-radius: 128px;
+  margin-bottom: 1.7em;
+  margin-top: 1.3em;
+  cursor: pointer;
+  transition: 0.7s;
+}
+@media (min-width: 90em) {
+  main .continue {
+    padding: 0.9em 5.9em;
+  }
+}
+main .continue:hover {
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
 }/*# sourceMappingURL=styles.css.map */
