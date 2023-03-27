@@ -110,10 +110,10 @@ main {
 
             .score_paragraph {
                 color: #303B59;
-                opacity: 0.5;
+                opacity: 1;
 
-                .score{
-                    opacity: 1;
+                .out_of_score{
+                    opacity: 0.5;
                 }
             }
         }

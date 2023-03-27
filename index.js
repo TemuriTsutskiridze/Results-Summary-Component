@@ -32,9 +32,9 @@ for (let i = 0; i < data.length; i++) {
 
     const score_element = document.createElement("p");
     score_element.classList.add("score_paragraph");
-    const score_span = document.createElement("span");
-    score_span.classList.add("score");
-    score_span.textContent = score;
-    score_element.append(score_span, " / 100");
+    const out_of_score = document.createElement("span");
+    out_of_score.classList.add("out_of_score");
+    out_of_score.textContent = " / 100";
+    score_element.append(score, out_of_score);
     summary_box.append(score_element);
 }

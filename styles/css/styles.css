@@ -151,8 +151,8 @@ main .summary .summary-box .left-container .category {
 }
 main .summary .summary-box .score_paragraph {
   color: #303B59;
-  opacity: 0.5;
-}
-main .summary .summary-box .score_paragraph .score {
   opacity: 1;
+}
+main .summary .summary-box .score_paragraph .out_of_score {
+  opacity: 0.5;
 }/*# sourceMappingURL=styles.css.map */
